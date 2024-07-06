@@ -25,16 +25,14 @@ const Post = ({ post }) => {
   };
 
   return (
-    <li className="border p-4 mb-4 flex justify-between items-center">
+    <li>
       <div>
-        <h3 className="text-lg font-bold">{post.title}</h3>
-        <p className="mt-2">{post.body}</p>
+        <h3>{post.title}</h3>
+        <p>{post.body}</p>
       </div>
       <button
-        onClick={handleDelete}
-        className="text-red-500 hover:text-red-700 focus:outline-none"
-      >
-        <RiDeleteBin6Line />
+        onClick={handleDelete}>
+      
       </button>
     </li>
   );
